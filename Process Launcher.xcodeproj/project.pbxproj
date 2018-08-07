@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5411BC6E211A5073007E5DFB /* username tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "username tests"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5411BC6E211A5073007E5DFB /* Process Launcher.temp_caseinsensitive_rename */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Process Launcher.temp_caseinsensitive_rename"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5411BC71211A5073007E5DFB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 		5411BC65211A5073007E5DFB = {
 			isa = PBXGroup;
 			children = (
-				5411BC70211A5073007E5DFB /* username tests */,
+				5411BC70211A5073007E5DFB /* src */,
 				5411BC6F211A5073007E5DFB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +49,25 @@
 		5411BC6F211A5073007E5DFB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5411BC6E211A5073007E5DFB /* username tests */,
+				5411BC6E211A5073007E5DFB /* Process Launcher.temp_caseinsensitive_rename */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5411BC70211A5073007E5DFB /* username tests */ = {
+		5411BC70211A5073007E5DFB /* src */ = {
 			isa = PBXGroup;
 			children = (
 				5411BC71211A5073007E5DFB /* main.swift */,
 			);
-			path = "username tests";
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5411BC6D211A5073007E5DFB /* username tests */ = {
+		5411BC6D211A5073007E5DFB /* Process Launcher.temp_caseinsensitive_rename */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5411BC75211A5073007E5DFB /* Build configuration list for PBXNativeTarget "username tests" */;
+			buildConfigurationList = 5411BC75211A5073007E5DFB /* Build configuration list for PBXNativeTarget "Process Launcher.temp_caseinsensitive_rename" */;
 			buildPhases = (
 				5411BC6A211A5073007E5DFB /* Sources */,
 				5411BC6B211A5073007E5DFB /* Frameworks */,
@@ -77,9 +77,9 @@
 			);
 			dependencies = (
 			);
-			name = "username tests";
+			name = "Process Launcher.temp_caseinsensitive_rename";
 			productName = "username tests";
-			productReference = 5411BC6E211A5073007E5DFB /* username tests */;
+			productReference = 5411BC6E211A5073007E5DFB /* Process Launcher.temp_caseinsensitive_rename */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +97,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5411BC69211A5073007E5DFB /* Build configuration list for PBXProject "username tests" */;
+			buildConfigurationList = 5411BC69211A5073007E5DFB /* Build configuration list for PBXProject "Process Launcher" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,7 +109,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5411BC6D211A5073007E5DFB /* username tests */,
+				5411BC6D211A5073007E5DFB /* Process Launcher.temp_caseinsensitive_rename */,
 			);
 		};
 /* End PBXProject section */
@@ -260,7 +260,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5411BC69211A5073007E5DFB /* Build configuration list for PBXProject "username tests" */ = {
+		5411BC69211A5073007E5DFB /* Build configuration list for PBXProject "Process Launcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5411BC73211A5073007E5DFB /* Debug */,
@@ -269,7 +269,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5411BC75211A5073007E5DFB /* Build configuration list for PBXNativeTarget "username tests" */ = {
+		5411BC75211A5073007E5DFB /* Build configuration list for PBXNativeTarget "Process Launcher.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5411BC76211A5073007E5DFB /* Debug */,
