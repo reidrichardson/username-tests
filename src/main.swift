@@ -12,19 +12,15 @@ import Foundation
 let userName = NSUserName()
 
 // uses inout so the parameter can be edited
-func runTask( log :inout String) -> Bool {
-    // define the program to be run
-    // define the arguments
-    let Path = "/usr/sbin/sysadminctl"
-    let Arguments = ["-secureTokenStatus", userName]
+func runTask( log :inout String, zPath :String, zArgs :[String]) -> Bool {
     // initialize the task
     let Task = Process()
     // create the output
     let stdOut = Pipe()
     let stdError = Pipe()
     // apply options to task
-    Task.launchPath = Path
-    Task.arguments = Arguments
+    Task.launchPath = zPath
+    Task.arguments = zArgs
     Task.standardOutput = stdOut
     Task.standardError = stdError
 
@@ -54,11 +50,12 @@ func runTask( log :inout String) -> Bool {
 }
 
 func Main() {
-    // initializes 
+    // initializes
     var hdsLog = String()
-    
+    let sysadminctl = "/usr/sbin/sysadminctl"
+    let stsArg = ["-secureTokenStatus", userName]
 
-    if(runTask(log: &hdsLog)) {
+    if(runTask(log: &hdsLog, zPath: sysadminctl, zArgs: stsArg)) {
         print("You made it for real this time\n")
     }
     
