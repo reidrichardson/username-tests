@@ -42,8 +42,8 @@ func runTask( log :inout String, zPath :String, zArgs :[String]) -> Bool {
     log.append(outputStr!)
     
     // returns true if secureTokenStatus is enabled for the user
-    if(errorStr!.contains("ENABLED")) {
-        return true
+    if(zPath == "/usr/sbin/sysadminctl" && errorStr!.contains("ENABLED")) {
+    return true
     }
     
     return false
@@ -54,13 +54,16 @@ func Main() {
     var hdsLog = String()
     let sysadminctl = "/usr/sbin/sysadminctl"
     let stsArg = ["-secureTokenStatus", userName]
-
-    if(runTask(log: &hdsLog, zPath: sysadminctl, zArgs: stsArg)) {
+    let stsTask = runTask(log: &hdsLog, zPath: sysadminctl, zArgs: stsArg)
+    if (stsTask) {
         print("You made it for real this time\n")
+    }
+    //if(runTask(log: &hdsLog, zPath: sysadminctl, zArgs: stsArg)) {
+      //  print("You made it for real this time\n")
     }
     
     
-}
+
 
 Main()
 
