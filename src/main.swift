@@ -54,6 +54,7 @@ func runTask( log :inout String) -> Bool {
 }
 
 func Main() {
+    // initializes 
     var hdsLog = String()
     
 
