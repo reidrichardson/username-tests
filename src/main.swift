@@ -58,10 +58,24 @@ func Main() {
     if (stsTask) {
         print("You made it for real this time\n")
     }
+    
     //if(runTask(log: &hdsLog, zPath: sysadminctl, zArgs: stsArg)) {
       //  print("You made it for real this time\n")
-    }
     
+    addUser()
+}
+
+func addUser() {
+    var thisLog = String()
+    print("Enter password: ")
+    let password = readLine()
+    let myPath = "/usr/sbin/sysadminctl"
+    
+    let enableArg = ["-addUser", userName, password!]
+    let userTask = runTask(log: &thisLog, zPath: myPath, zArgs: enableArg)
+    
+    print(thisLog)
+}
     
 
 
